@@ -1,0 +1,255 @@
+/* палітра */
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #eeeeee;
+  --footer-bg-color: #2f303a;
+  --button-bg-color: #f5f4fa;
+  --logo-color-header: #000000;
+  --contacts-footer: rgba(255, 255, 255, 0.6);
+}
+
+/* оформлення базове*/
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--main-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+/* оформлення header */
+
+/* логотип */
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway;
+
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-header {
+  color: var(--logo-color-header);
+}
+
+/* навігація */
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.link {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+/* контакти */
+
+.contacts {
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* оформлення секцій */
+
+ul {
+    list-style: none;
+}
+
+/* оформлення прихованих заголовків */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+.hero .title {
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* оформлення Button hero */
+
+.button.hero {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button.hero:hover,
+.button.hero:focus {
+    background-color: #188ce8;
+}
+
+.features-list .title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features-list .descr {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.our-works .title,
+.team .title {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.team {
+  background-color: var(--button-bg-color);
+}
+
+.team-mbr {
+  background-color: var(--primary-bg-color);
+}
+
+.team-mbr .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+.team-mbr .role {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* оформлення footer */
+
+.bottom {
+  background-color: var(--footer-bg-color);
+}
+
+.logo-footer {
+    color: var(--primary-bg-color);
+}
+
+.contacts-bottom {
+    color: var(--contacts-footer);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.contacts-bottom .link:hover,
+.contacts-bottom .link:focus {
+  color: var(--accent-color);
+}
+
+.location {
+  color: var(--primary-bg-color);
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* оформлення Портфоліо */
+/* фільтр */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--button-bg-color);
+    border-color: transparent;
+    cursor: pointer;
+
+    font-family: inherit;
+}
+
+.button:hover,
+.button:focus,
+.button.current {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+}
+
+.projects-filter .button {
+    font-weight: 500;
+    font-size: 16px;
+       line-height: 1.62;
+}
+
+/* список проектів */
+
+.project-item {
+    border: 1px solid #EEEEEE
+}
+
+.project-item .title {
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2.0;
+        letter-spacing: 0.06em;
+}
+
+.project-item .descr {
+    font-size: 16px;
+    line-height: 1.88;
+}
