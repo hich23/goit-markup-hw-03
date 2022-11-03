@@ -56,9 +56,6 @@ header {
 
   font-size: 26px;
   line-height: 1.19;
-}
-
-.logo-link {
   text-decoration: none;
 }
 
@@ -180,6 +177,8 @@ p {
 /* секція Hero */
 .hero {
   background-color: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero .title {
@@ -193,6 +192,7 @@ p {
   text-transform: uppercase;
 
   margin-bottom: 30px;
+  padding: 0px;
 }
 
 /* оформлення Button hero */
@@ -309,12 +309,13 @@ p {
 /* оформлення footer */
 
 .bottom {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-bg-color);
 }
 
-.bottom .container {
-  padding: 60px 15px;
-
+.bottom .container{
   display: block;
   text-align: left;
 }
@@ -324,6 +325,7 @@ p {
 }
 
 .bottom .logo {
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -360,7 +362,7 @@ p {
 .projects-filter {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter:not(:last-child) {
